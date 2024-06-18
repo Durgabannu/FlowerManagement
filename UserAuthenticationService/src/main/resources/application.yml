@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: UserAuthenticationService
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/usersserver
+    username: root
+    password: Bannu@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
